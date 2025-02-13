@@ -1,0 +1,39 @@
+.task_two-container {
+    height: 100vh;
+    max-height: 100vh;
+    background-image: url("../asset/images/backgound/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+        padding: 1rem;
+        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 0.5rem;
+        width: 700px;
+        backdrop-filter: blur(10px);
+
+        .title {
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+        .left-content,
+        .right-content {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .task_two-container {
+        .form {
+            width: 90vw;
+        }
+    }
+}
